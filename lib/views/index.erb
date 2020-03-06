@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bonjours et bienvenu sur ma page</h1>
+
+    	 <% gossips.each do |cle, valeur| %>
+        	<p>
+          		<%= cle  %>
+          		=>
+          		<%= valeur %>
+          <a href = "/gossips/<%= index_gossip %>/">page du gossip</a>
+
+          </p>
+          <% index_gossip += 1 %>
+      	<% end %>
+
+<p>si vous voulez <a href = "/gossips/new/">créer un nouveau potin</a></p>
+  </body>
+</html>
+
+
